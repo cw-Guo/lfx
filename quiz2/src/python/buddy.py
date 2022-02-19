@@ -3,10 +3,10 @@ from flask import Flask
 app = Flask(__name__)
 
 
-@app.route("/buddy/list", method=['GET'])
+@app.route("/buddy/list", methods=['GET'])
 def listBuddy():
     return "<p>Hello, World!</p>"
 
 
-if __name == '__main__':
+if __name__ == '__main__':
     app.run(debug=False, host='0.0.0.0')
