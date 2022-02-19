@@ -1,7 +1,5 @@
 FROM ubuntu:18.04
 
-MAINTANER Chengwei Guo "chengweg@andrew.cmu.edu"
-
 RUN apt-get update -y && \
     apt-get install -y python-pip python-dev
 
