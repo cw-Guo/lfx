@@ -10,5 +10,5 @@ spec:
   ports:
     - protocol: TCP # protocol selected for the ports below
       port: 80 # incoming request port
-      targetPort: 8080 # port that the pod listens to
+      targetPort: 5000 # port that the pod listens to
   type: LoadBalancer

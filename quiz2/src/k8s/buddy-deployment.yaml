@@ -18,4 +18,4 @@ spec:
         - name: buddy-service #  name of app that pods run
           image: gcr.io/gcp-docker-kubernetes-340707/profile-service:latest # docker image: tag to be run on pod
           ports:
-            - containerPort: 8080 # listening port of the container
+            - containerPort: 5000 # listening port of the container
