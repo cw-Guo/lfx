@@ -1,7 +1,7 @@
 apiVersion: apps/v1 # defines the particular functionalities of Kubernetes to be used
 kind: Deployment # ServiceTypes allow you to specify what kind of Service you want
 metadata: # Attributes related to  your deployment
-  name: list-buddy-deployment # creates a deployment with the given name
+  name: buddy-list-deployment # creates a deployment with the given name
   labels:
     app: buddy-service
 spec:
@@ -16,6 +16,7 @@ spec:
     spec: # specifications defined of the pods
       containers:
         - name: buddy-service #  name of app that pods run
-          image: gcr.io/gcp-docker-kubernetes-340707/profile-service:latest # docker image: tag to be run on pod
+          image: lfx/buddy:latest # docker image: eploy on minikube in local
+          imagePullPolicy: Never # deploy on minikube in local
           ports:
             - containerPort: 5000 # listening port of the container
